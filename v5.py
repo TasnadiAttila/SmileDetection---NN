@@ -5,7 +5,6 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader, random_split
 from torchvision import transforms
 from PIL import Image
-import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 from torchvision import models
@@ -160,16 +159,18 @@ if __name__ == '__main__':
     SMILE_DIR = os.path.join(BASE_DIR, 'images/smile')
     NON_SMILE_DIR = os.path.join(BASE_DIR, 'images/non_smile')
     TEST_IMAGES = [
+        os.path.join(BASE_DIR, 'images/1.jpg'),
+        os.path.join(BASE_DIR, 'images/2.jpg'),
+        os.path.join(BASE_DIR, 'images/3.jpg'),
+        os.path.join(BASE_DIR, 'images/4.jpg'),
+        os.path.join(BASE_DIR, 'images/5.jpg'),
+        os.path.join(BASE_DIR, 'images/6.jpg'),
         os.path.join(BASE_DIR, 'images/a.jpg'),
         os.path.join(BASE_DIR, 'images/a1.jpg'),
         os.path.join(BASE_DIR, 'images/a2.jpg'),
         os.path.join(BASE_DIR, 'images/a3.jpg'),
         os.path.join(BASE_DIR, 'images/a4.jpg'),
         os.path.join(BASE_DIR, 'images/a5.jpg'),
-        os.path.join(BASE_DIR, 'images/a6.jpg'),
-        # Add new test images here
-        os.path.join(BASE_DIR, 'images/test/new_image1.jpg'),
-        os.path.join(BASE_DIR, 'images/test/new_image2.jpg')
     ]
     
     # Dataset with different transforms for train/val
@@ -205,7 +206,7 @@ if __name__ == '__main__':
     # Training loop with early stopping
     num_epochs = 15
     best_val_acc = 0
-    patience = 5
+    patience = 20
     patience_counter = 0
     
     for epoch in range(num_epochs):

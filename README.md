@@ -4,5 +4,4 @@ Due to Github's quantity constraints, the images used for the tutorial had to be
 Installed packages:
  - torch 
  - torchvision 
- - matplotlib
  - opencv-python

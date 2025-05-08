@@ -5,3 +5,4 @@ Installed packages:
  - torch 
  - torchvision 
  - matplotlib
+ - opencv-python

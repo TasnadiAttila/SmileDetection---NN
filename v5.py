@@ -164,13 +164,11 @@ if __name__ == '__main__':
         os.path.join(BASE_DIR, 'images/3.jpg'),
         os.path.join(BASE_DIR, 'images/4.jpg'),
         os.path.join(BASE_DIR, 'images/5.jpg'),
-        os.path.join(BASE_DIR, 'images/6.jpg'),
         os.path.join(BASE_DIR, 'images/a.jpg'),
         os.path.join(BASE_DIR, 'images/a1.jpg'),
         os.path.join(BASE_DIR, 'images/a2.jpg'),
         os.path.join(BASE_DIR, 'images/a3.jpg'),
         os.path.join(BASE_DIR, 'images/a4.jpg'),
-        os.path.join(BASE_DIR, 'images/a5.jpg'),
     ]
     
     # Dataset with different transforms for train/val

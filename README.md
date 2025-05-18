@@ -6,4 +6,4 @@ Installed packages:
  - torchvision 
  - opencv-python
 
-https://www.youtube.com/watch?v=lYPYoK8l7zA
+
